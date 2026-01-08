@@ -1,0 +1,17 @@
+{
+  "name": "iflowkit-cli-container",
+  "dockerComposeFile": "docker-compose.yml",
+  "service": "app",
+  "workspaceFolder": "/iflowkit-cli",
+  "remoteUser": "root",
+  "forwardPorts": [1453],
+  "extensions": [
+    "golang.Go",
+    "ms-azuretools.vscode-docker",
+    "vscjava.vscode-java-pack"
+  ],
+  "settings": {
+    "go.useLanguageServer": true,
+    "docker.host": "unix:///var/run/docker.sock"
+  }
+}

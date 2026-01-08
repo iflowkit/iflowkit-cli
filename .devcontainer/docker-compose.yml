@@ -1,0 +1,11 @@
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    env_file:
+      - ../.env
+    volumes:
+      - ..:/iflowkit-cli:cached
+      - /var/run/docker.sock:/var/run/docker.sock
+    command: sleep infinity
